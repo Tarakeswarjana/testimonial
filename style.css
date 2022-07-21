@@ -1,0 +1,134 @@
+:root{
+    --main-radious:20px;
+    --main-padding:5px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.main{
+   background-color: azure;
+    padding: 30px;
+    margin: 3%;
+    display: grid;
+ 
+    grid-template-columns: 1.2fr 1fr 1.2fr 0.7fr;
+    grid-template-rows: 1fr 1.2fr ;
+    grid-template-areas: 
+    "first first second fifth"
+    "third fourth fourth fifth";
+    grid-gap:1.5rem;
+    
+}
+.sub1{
+
+    display: flex;
+    padding: 20px;
+   
+    
+}
+.sub1 p{
+    padding: 20px;
+}
+/*
+.sub2{display: flex;}
+.sub3{display:flex;}
+.sub4{
+    display: flex;
+}
+.sub5{
+    display: flex;
+}*/
+
+
+#first{
+    border-radius: var(--main-radious);
+    background-color:#733FC8;
+    grid-area:first;
+    padding: 15px;
+   
+}
+#first img{
+    width:10%;
+    border-radius: 300px;
+
+}
+#first img{
+    width:10%;
+    border-radius: 200px;
+
+}
+#first p{
+    color:#F3DEFF;
+}
+#second img{
+    width:20%;
+    border-radius: 200px;
+
+}
+#second p{
+    color:#F3DEFF;
+}
+#third img{
+    width:20%;
+    border-radius: 200px;
+
+}
+#fourth img{
+    width:20%;
+    border-radius: 300px;
+
+}
+#fourth p{
+    color: #F3DEFF;
+}
+#fifth img{
+    width:50%;
+    border-radius: 200px;
+
+}
+
+
+#second{
+    border-radius: var(--main-radious);
+    background-color:  #49556B;
+   grid-area:second;
+   padding: 15px;
+}
+#third{
+    border-radius: var(--main-radious);
+background-color: white;
+grid-area:third;
+padding: 15px;
+}
+#fourth{
+    border-radius: var(--main-radious);
+background-color: #18202D;
+grid-area:fourth;
+padding: 15px;
+}
+#fifth{
+    border-radius: var(--main-radious);
+ grid-area:fifth;
+ padding: 15px;
+   
+background-color: white;
+}
+@media  screen and (max-width:580px) {
+    .main{ 
+        grid-template-columns: 2.5fr ;
+        grid-template-rows: 1.5fr 1fr 0.8fr 1.5fr 2fr ;
+        grid-template-areas: 
+        "first"
+        "second"
+        "third"
+        "fourth"
+        "fifth"
+        
+        
+    }
+    
+}
+
